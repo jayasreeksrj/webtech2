@@ -1,0 +1,630 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+#container {
+    display: flex;
+}
+
+}
+#left-frame {
+    flex: 1;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #333;
+    color: #fff;
+    padding-top: 20px;
+    overflow-y: auto;
+}
+
+
+#right-frame section:target {
+    display: block; /* Show the target section */
+    padding-top: calc(50vh - 50%); /* Center vertically */
+}
+#right-frame section {
+    max-width: 50%; /* Example maximum width */
+    margin: 0 auto; /* Center horizontally */
+    display: none; /* Hide sections by default */
+    position: relative; /* Needed for centering */
+    top: 50%; /* Move section down by half of its height */
+    transform: translateY(-50%); /* Center vertically */
+}
+#right-frame section:first-child {
+    display: block;
+}
+
+#left-frame h3 {
+    font-size: 24px;
+}
+
+#left-frame a {
+  
+    font-size: 18px;
+}
+
+
+#left-frame {
+height:100%;
+    flex: 3;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #333;
+    color: #fff;
+    overflow-y: auto; /* Enable vertical scrolling if needed */
+    max-height: 100%; /* Set maximum height to the viewport height */
+    width: 400px; /* Adjust the width as needed */
+    box-sizing: border-box; /* Include padding and border in the width */
+    padding-top: 20px;
+
+}
+
+#left-frame h3 {
+    padding: 5px;
+    margin: 0;
+    border-bottom: 1px solid #555;
+    font-size: 18px; /* Adjust the font size as needed */
+align:center;
+}
+
+#left-frame a {
+    display: block;
+    padding: 5px;
+    font-size: 18px; /* Adjust the font size as needed */
+    color: #fff;
+    transition: background-color 0.3s;
+}
+
+#left-frame a:hover {
+    background-color: #555;
+    text-decoration: none;
+}
+#left-frame {
+    flex: 0 0 30%; /* Set flex basis to 25% */
+    /* Other styles remain the same */
+}
+
+#right-frame {
+    flex: 1; /* Adjust the right frame to take the remaining space */
+    /* Other styles remain the same */
+}
+
+
+
+#left-frame a:active {
+    background-color: #888;
+}
+
+#left-frame a:target {
+    background-color: #444;
+}
+
+#right-frame {
+    flex: 3;
+    margin: 20px;
+    scroll-behavior: smooth;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+#right-frame section {
+    display: none;
+}
+
+#right-frame section:target {
+    display: block;
+    text-align: center; /* Center align the content */
+    /* Add other styles as needed */
+}
+
+#right-frame h1,
+#right-frame h2,
+#right-frame h3 {
+    text-align: left; /* Align headings to the left */
+}
+
+#right-frame p,
+#right-frame ul,
+#right-frame ol {
+    text-align: left; /* Align paragraphs and lists to the left */
+}
+
+a {
+    text-decoration: none;
+    color: blue;
+}
+
+a:link,
+a:visited {
+    color: blue;
+}
+
+a:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+#profile-image {
+    border-radius: 50%;
+    width: 150px;
+    border: 3px solid #ccc;
+    height: 150px;
+    image-orientation: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table, th, td {
+    border: 1px solid #333;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #ddd;
+}
+
+
+ul {
+    list-style-type:none;
+    padding: 0;
+}
+
+li {
+    padding-left: 20px;
+    position: relative;
+}
+
+li:before {
+    content: "\2022";
+    position: absolute;
+    left: 0;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 20px 0;
+}
+
+p {
+    margin-bottom: 10px;
+}
+
+.icon {
+    display: inline-block;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.icon img {
+    height: 40px;
+}
+
+.center {
+    text-align: center;
+}
+
+.right {
+    text-align: right;
+}
+@media print {
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    .about {
+        page-break-after: always;
+        position: relative;
+        width: 21cm;
+        height: 29.7cm;
+        margin: 0 auto;
+        background-color: white;
+        box-sizing: border-box;
+        padding: 1cm;
+    }
+}
+
+
+blockquote {
+    background-color: #f9f9f9;
+    padding: 10px;
+    margin: 0 0 20px;
+}
+
+blockquote p {
+    margin: 0;
+}
+
+.code {
+    font-family: Consolas, monospace;
+    background-color: #f9f9f9;
+    padding: 10px;
+    margin: 0 0 20px;
+    overflow-x: auto;
+    border-radius: 5px;
+}
+
+.code pre {
+    margin: 0;
+}
+
+strong {
+    font-weight: bold;
+}
+
+em {
+    font-style: italic;
+}
+
+.highlight {
+    background-color: #ffff00;
+}
+
+.warning {
+    color: #ff0000;
+    font-weight: bold;
+}
+
+.success {
+    color: #008000;
+    font-weight: bold;
+}
+
+.info {
+    color: #0000ff;
+    font-weight: bold;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+/* Additional styles for various elements */
+
+/* Section styles */
+section {
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #f8f9fa;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Card styles */
+.card {
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Badge styles */
+.badge {
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 12px;
+}
+
+/* Progress bar styles */
+.progress {
+    width: 100%;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.progress-bar {
+    background-color: #007bff;
+    color: #fff;
+    text-align: center;
+    line-height: 20px;
+}
+
+/* Tooltip styles */
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* Tab styles */
+.tab {
+    display: none;
+}
+
+/* Accordion styles */
+.accordion {
+    background-color: #f8f9fa;
+    color: #333;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: background-color 0.3s;
+}
+
+.active-accordion,
+.accordion:hover {
+    background-color: #ddd;
+}
+
+.panel {
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+}
+
+.panel.show {
+    display: block;
+}
+/* Additional styles for various elements */
+
+/* Header styles */
+header {
+    background-color: #007bff;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Button styles */
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+/* Alert styles */
+.alert {
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.alert-success {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.alert-info {
+    background-color: #d1ecf1;
+    color: #0c5460;
+    border: 1px solid #bee5eb;
+}
+
+.alert-warning {
+    background-color: #fff3cd;
+    color: #856404;
+    border: 1px solid #ffeeba;
+}
+
+.alert-danger {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+/* Feature box styles */
+.feature-box {
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.feature-box h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.feature-box p {
+    color: #555;
+    margin-bottom: 10px;
+}
+
+/* Card styles */
+.card {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.card h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.card p {
+    color: #555;
+    margin-bottom: 10px;
+}
+
+/* Navigation styles */
+.navbar {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+.navbar a:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
+
+/* Image styles */
+.image {
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Table styles */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.table, th, td {
+    border: 1px solid #ccc;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #ddd;
+}
+
+/* Form styles */
+.form {
+    margin-bottom: 20px;
+}
+
+.form-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.form-textarea {
+    width: 100%;
+    height: 150px;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: vertical;
+    box-sizing: border-box;
+}
+
+.form-submit {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.form-submit:hover {
+    background-color: #0056b3;
+}
+
+/* Sidebar styles */
+.sidebar {
+    flex: 1;
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar h3 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.sidebar ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+.sidebar li {
+    margin-bottom: 10px;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+.sidebar a:hover {
+    text-decoration: underline;
+}
